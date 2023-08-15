@@ -18,7 +18,7 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-        new HtmlWebpackPlugin({
+      new HtmlWebpackPlugin({
             template: './index.html',
             title: 'Text Editor',
         }),
@@ -40,7 +40,7 @@ module.exports = () => {
             publicPath: '/',
             icons: [
                 {
-                    src: path.resolve('src/images/icons/icon-512x512.png'),
+                    src: path.resolve('src/images/logo.png'),
                     sizes: [96, 128, 192, 256, 384, 512],
                     destination: path.join('assets', 'icons'),
                 },
